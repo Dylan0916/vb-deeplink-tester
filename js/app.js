@@ -17,7 +17,7 @@ switch (urlSearchParams.get("env")) {
 const displayList = [
   {
     title: "新款韓國東大門香水瓶百搭數字大牌耳環耳釘流蘇格子蝴蝶結耳飾品",
-    url: `${url}/user_submit/item/71681`,
+    url: `${url}/user_submit/item/ali:12691`,
     text: "user_submit item",
   },
   {
