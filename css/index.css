@@ -1,0 +1,25 @@
+[v-cloak] {
+  display: none;
+}
+.env-selector {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.radio-section {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.radio-section label {
+  padding: 10px 0;
+}
+.link-input {
+  width: 55vw;
+}
+ol {
+  padding-left: 15px;
+}
+li {
+  margin-bottom: 10px;
+}

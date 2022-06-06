@@ -1,25 +1,21 @@
-// const urlSearchParams = new URLSearchParams(location.search);
-// let url = 'https://sa.www.verybuy.io';
-
-// switch (urlSearchParams.get('env')) {
-//   case 'prod':
-//     url = 'https://www.verybuy.cc';
-//     break;
-//   case 'testing':
-//     url = 'https://www-testing.verybuy.cc';
-//     break;
-
-//   default:
-//     break;
-// }
-
 new Vue({
   el: '#vm',
   data: {
     link: '',
-    url: 'https://sa.www.verybuy.io',
+    envType: 'staging',
   },
   computed: {
+    url() {
+      switch (this.envType) {
+        case 'production':
+          return 'https://www.verybuy.cc';
+        case 'testing':
+          return 'https://www-testing.verybuy.cc';
+        case 'staging':
+        default:
+          return 'https://sa.www.verybuy.io';
+      }
+    },
     displayList() {
       return [
         {
